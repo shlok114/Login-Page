@@ -1,0 +1,135 @@
+/*The main body*/
+
+body{
+    background-image: radial-gradient(circle, #ff84b9, #ec71bd, #d461c3, #b455cb, #8a4fd3);
+    background-size: cover;
+    font-family: 'KoHo';
+}
+
+
+/*Main container and the login container css*/
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#login{
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    height: 70vh;
+    width: 80vw;
+    font-family: 'KoHo';
+    display: grid;
+    grid-template-columns: 65% 35%;
+    overflow: hidden;
+}
+
+
+/*The image div of login*/
+#image{
+    display: flex;
+    background-image: url('1.jpg');
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    padding: 90px 90px;
+    color: white;
+}
+
+#image:hover{
+    transform: scale(1.04);
+}
+
+#image p{
+    font-family: 'Poppins';
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    font-size: 16px;
+}
+#image span{
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* The text div of login */
+#text{
+    padding: 90px 30px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffcff1;
+    border-radius: 20px;
+    margin-bottom: 10px; /* Adds space between inputs */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-container i {
+    margin-right: 10px;
+    color: #b12e85;
+}
+
+.input-container input {
+    border: none;
+    background-color: transparent;
+    outline: none; /*This gives no outline to the input tag*/
+    width: 100%;
+}
+
+.input-container:focus-within {
+    box-shadow: 1px 1px 10px rgba(116, 12, 64, 0.623); /* Adds a pink glow */
+}
+
+#text p{
+    color: #b12e85;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#pass{
+    color: rgb(143, 139, 139);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+#button{
+    margin: auto;
+    padding: 2px 5px;
+    background-image: linear-gradient(to right top, #f86acd, #e453ca, #cd3cc8, #b324c7, #9506c7);
+    border-radius: 20px;
+    height: 25px;
+    width: 25%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#button button{
+    border: none;
+    background-color: transparent;
+    outline: none; /*This gives no outline to the input tag*/
+    width: 100%;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    font-family: 'KoHo';
+    cursor: pointer;
+}
